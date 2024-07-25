@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Player({initialName, symbol}){
     const [playerName, setPlayerName] = useState(initialName);    
-    const[ isEditing , setIsEdit] = useState(false);
+    const [isEditing , setIsEdit] = useState(false);
 
     function handleClick(){
 
@@ -11,7 +11,6 @@ export default function Player({initialName, symbol}){
     }
 
     function handleChange(event){
-        console.log(event);
         setPlayerName(() => event.target.value);
     }
 
